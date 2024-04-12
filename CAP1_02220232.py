@@ -21,7 +21,7 @@ computer_score = 0
 def read_input():
     file = open("input_2_cap1.txt", "r")
     computer = file.readlines()
-    computer_input = random.choice(computer).split() # Use only the first two elements
+    computer_input = random.choice(computer).split() # generating random by computer 
     file.close()
     print("----------------------------------------------------------------------------")
     player_input = int(input("Make a choice: 1.Rock\t2.Paper\t3.Scissors\n--> "))
