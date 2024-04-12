@@ -30,8 +30,8 @@ def read_input():
 
 def calculate_score(computer_input, player_input, attempt_left, initial_score):
                           ###########Details about the rule and score system of the game################         ########Special case##########
-    computer = computer_input             # 1 & A = Rock      Y = Have to Draw the game            # Win 6 points       extra point(s) if you meet 
-    player = player_input                 # 2 & B = Paper     Z = Have to Win against Opponent     #Lose 0 points       opponent conditions to end game
+    computer = computer_input                   # 1 & A = Rock      Y = Have to Draw the game            # Win 6 points       extra point(s) if you meet 
+    player = player_input                       # 2 & B = Paper     Z = Have to Win against Opponent     #Lose 0 points       opponent conditions to end game
     if (player_input > 0) and(player_input <=3):# 3 & C = Scissors  X = Have to lose               # Draw 3 points      Refer game rule for conditions 
         if computer[0] == 'A':
             if player == 1:
@@ -52,7 +52,7 @@ def calculate_score(computer_input, player_input, attempt_left, initial_score):
                 if computer[1] == 'X':
                     initial_score += 3
                     print("3 points: (Rock vs Scissors): Opponent chose you to end with lose:(+3)") # You will get some points even if  you lose,
-                else:                                                                               # if you meet the opponent second condition
+                else:                                                                               # if you meet the opponent's second condition
                     initial_score += 0
                     print("0 points: (Rock vs Scissors): You lose")
 
