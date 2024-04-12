@@ -14,14 +14,13 @@
 # Put your number here: 1-2-3 and opponent:C-C-B(Z+3)
 ################################
 import random
-max_round = 3
+max_round = int(input("Enter the maximum round you want to play: "))
 score = 0
 computer_score = 0
-# Read the input.txt file
 def read_input():
     file = open("input_2_cap1.txt", "r")
     computer = file.readlines()
-    computer_input = random.choice(computer).split()#[:2]  # Use only the first two elements
+    computer_input = random.choice(computer).split() # Use only the first two elements
     file.close()
     print("----------------------------------------------------------------------------")
     player_input = int(input("Make a choice: 1.Rock\t2.Paper\t3.Scissors\n--> "))
@@ -32,7 +31,7 @@ def calculate_score(computer_input, player_input, attempt_left, initial_score):
                           ###########Details about the rule and score system of the game################         ########Special case##########
     computer = computer_input             # 1 & A = Rock      Y = Have to Draw the game            # Win 6 points       extra point(s) if you meet 
     player = player_input                 # 2 & B = Paper     Z = Have to Win against Opponent     #Lose 0 points       opponent conditions to end game
-    if (player_input > 0) and(player_input <=3):                                  # 3 & C = Scissors  X = Have to lose                     # Draw 3 points      Refer game rule for conditions 
+    if (player_input > 0) and(player_input <=3):# 3 & C = Scissors  X = Have to lose               # Draw 3 points      Refer game rule for conditions 
         if computer[0] == 'A':
             if player == 1:
                 if computer[1] == 'Y':
