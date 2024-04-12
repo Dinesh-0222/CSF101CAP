@@ -8,6 +8,7 @@
 #2.https://docs.python.org/3/tutorial/modules.html
 #3.https://docs.python.org/3/tutorial/datastructures.html#more-on-conditions
 #4.https://docs.python.org/3/tutorial/controlflow.html#if-statements
+#5.https://docs.python.org/3/tutorial/inputoutput.html#the-string-format-method
 ################################
 # SOLUTION
 # Your Solution Score: 15
