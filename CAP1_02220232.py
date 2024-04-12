@@ -52,7 +52,7 @@ def calculate_score(computer_input, player_input, attempt_left, initial_score):
                 if computer[1] == 'X':
                     initial_score += 3
                     print("3 points: (Rock vs Scissors): Opponent chose you to lose:(+3)")# You will get some points even if  you lose,
-                else:                                                                 # if opponent chose you to lose (points correspond to your number)
+                else:                                                                 # if you mee the opponent second condition
                     initial_score += 0
                     print("0 points: (Rock vs Scissors): You lose")
 
@@ -105,7 +105,7 @@ def calculate_score(computer_input, player_input, attempt_left, initial_score):
         else:
                 print(f"\n----------FINAL SCORE ---------\n\t       {initial_score}")
     else:
-        print("---------Invalid Choice--------------")  #If your choice is not between 1 to 3, than make to enter 0 for restarting the game from first
+        print("---------Invalid Choice--------------")  #If your choice is not between 1 to 3, than makes to enter 0 for restarting the game 
         restart=(int(input("ENTER 0 TO RESTART: ")))
         if restart == 0:
             calculate_score(*read_input(),attempt_left,initial_score)
