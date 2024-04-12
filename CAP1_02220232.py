@@ -105,7 +105,7 @@ def calculate_score(computer_input, player_input, attempt_left, initial_score):
         else:
                 print(f"\n----------FINAL SCORE ---------\n\t       {initial_score}")
     else:
-        print("---------Invalid Choice--------------")
+        print("---------Invalid Choice--------------")  #If your choice is not between 1 to 3, than make to enter 0 for restarting the game from first
         restart=(int(input("ENTER 0 TO RESTART: ")))
         if restart == 0:
             calculate_score(*read_input(),attempt_left,initial_score)
