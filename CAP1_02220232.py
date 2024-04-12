@@ -44,14 +44,14 @@ def calculate_score(computer_input, player_input, attempt_left, initial_score):
             elif player == 2:
                 if computer[1] == 'Z':
                     initial_score += 8
-                    print("8 points: (Rock vs Paper): opponent chose to Win:(+2) ")
+                    print("8 points: (Rock vs Paper): opponent chose you to Win:(+2) ")
                 else:
                     initial_score += 6
                     print("6 points: (Rock vs Paper): You win")
             elif player == 3:
                 if computer[1] == 'X':
                     initial_score += 3
-                    print("3 points: (Rock vs Scissors): Opponent chose to lose:(+3)")# You will get some points even if  you lose,
+                    print("3 points: (Rock vs Scissors): Opponent chose you to lose:(+3)")# You will get some points even if  you lose,
                 else:                                                                 # if opponent chose you to lose (points correspond to your number)
                     initial_score += 0
                     print("0 points: (Rock vs Scissors): You lose")
@@ -60,7 +60,7 @@ def calculate_score(computer_input, player_input, attempt_left, initial_score):
             if player == 1:
                 if computer[1] == 'X':
                     initial_score += 1
-                    print("1 points: (Paper Vs Rock): Opponent chose to lose:(+1)")
+                    print("1 points: (Paper Vs Rock): Opponent chose you to lose:(+1)")
                 else:
                     initial_score += 0
                     print("0 points: (Paper vs Rock): You lose")
@@ -82,14 +82,14 @@ def calculate_score(computer_input, player_input, attempt_left, initial_score):
             if player == 1:
                 if computer[1] == 'Z':
                     initial_score += 7
-                    print("7 points: (Scissors vs Rock): Opponent chose to win:(+1)")
+                    print("7 points: (Scissors vs Rock): Opponent chose you to win:(+1)")
                 else:
                     initial_score += 6
                     print("6 points: (Scissors vs Rock): You win")
             elif player == 2:
                 if computer[1] == 'X':
                     initial_score += 2
-                    print(" 2 points: (scissors vs Rock): opponent chose to lose:(+2)")
+                    print(" 2 points: (scissors vs Rock): opponent chose you to lose:(+2)")
                 else:
                     initial_score += 0
                     print("0 points: (Scissors vs Rock): You lose")
