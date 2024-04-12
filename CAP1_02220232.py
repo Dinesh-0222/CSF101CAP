@@ -51,8 +51,8 @@ def calculate_score(computer_input, player_input, attempt_left, initial_score):
             elif player == 3:
                 if computer[1] == 'X':
                     initial_score += 3
-                    print("3 points: (Rock vs Scissors): Opponent chose you to end with lose:(+3)")# You will get some points even if  you lose,
-                else:                                                                 # if you mee the opponent second condition
+                    print("3 points: (Rock vs Scissors): Opponent chose you to end with lose:(+3)") # You will get some points even if  you lose,
+                else:                                                                               # if you meet the opponent second condition
                     initial_score += 0
                     print("0 points: (Rock vs Scissors): You lose")
 
