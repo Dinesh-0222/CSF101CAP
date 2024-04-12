@@ -109,5 +109,5 @@ def calculate_score(computer_input, player_input, attempt_left, initial_score):
         if restart == 0:
             calculate_score(*read_input(),attempt_left,initial_score)
         else:
-            print("---------THANK YOU---------PLEASE REFRESH THE GAME!---------")
+            print("----------------------------------\nSORRY FAIL TO RESTART!")
 calculate_score(*read_input(), max_round, score)
