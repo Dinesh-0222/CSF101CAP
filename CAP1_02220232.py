@@ -37,7 +37,7 @@ def calculate_score(computer_input, player_input, attempt_left, initial_score):
             if player == 1:
                 if computer[1] == 'Y':
                     initial_score += 4                                                                # computer = computer random choice
-                    print("4 points: (Rock vs Rock): Opponent chose to end with Draw:(+1) ")
+                    print("4 points: (Rock vs Rock): Opponent chose to end with Draw:(+1) ")          # player = player_input
                 else:
                     initial_score += 3
                     print("3 points: (Rock vs Rock):")
