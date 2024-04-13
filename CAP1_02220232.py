@@ -24,25 +24,25 @@ def calculate_score(computer_input, initial_score):                             
     computer = computer_input     #Assigning to variable computer                                               # C & 3 == Scissors      Z == need to end with win
     if computer[0] == 'A':     
         if computer[1] == "X":  #need to end with Lose
-            initial_score += 1  #Line 25 to 31 ####It calculate the score of Rock and its three conditions                                                                      
+            initial_score += 3  #Line 25 to 31 ####It calculate the score of Rock and its three conditions                                                                      
         elif computer[1] == "Y":# Need to end with Draw
-            initial_score += 3
+            initial_score += 4
         else:                   # Need to end with win
-            initial_score += 7
+            initial_score += 8
     elif computer[0] == 'B':
         if computer[1] == "X":   #need to end with Lose
-            initial_score += 2   # From line 32 to 38 ### It calculate the score of Paper and irs three conditions
+            initial_score += 1   # From line 32 to 38 ### It calculate the score of Paper and irs three conditions
         elif computer[1] == "Y": # Need to end with Draw
-            initial_score += 5
+            initial_score += 2
         else:                     # Need to end with win
             initial_score += 8                                                              
     elif computer[0] == "C":
         if computer[1] == "X":  #need to end with Lose
-            initial_score += 3  # From line 39 to 45 # It calculate the score of Scissors and its three conditions
+            initial_score += 2  # From line 39 to 45 # It calculate the score of Scissors and its three conditions
         elif computer[1] == 'Y':# Need to end with Draw
             initial_score += 6
         else:                   # Need to end with win
-            initial_score += 9
+            initial_score += 7
     return initial_score
 
 #score before game
