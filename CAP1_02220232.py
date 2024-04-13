@@ -11,7 +11,7 @@
 #5.https://docs.python.org/3/tutorial/inputoutput.html#the-string-format-method
 ################################
 # SOLUTION
-# Your Solution Score: 48786
+# Your Solution Score: 45282
 # Put your number here: 02220232
 ################################
 def read_input():
